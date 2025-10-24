@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблицы и формы </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <table class="table-exapmle">
+        <caption class="eqe">АвтоЗвук</caption>
+        <thead>
+            <tr>
+                <th>Наименнование</th>
+                <th>Цена</th>
+                <th>Кол-во</th>
+                <th>Итог</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Усилитель 6-канальный Audison SR 6.600</td>
+                <td>65 700</td>
+                <td>2</td>
+                <td>131400</td>
+            </tr>
+            <tr>
+                <td>Мидбас EDGE EDUPRO8-E3</td>
+                <td>8 990</td>
+                <td>8</td>
+                <td>71920</td>
+            </tr>
+            <tr>
+                <td>DL Audio LEGEND 15</td>
+                <td>36990</td>
+                <td>4</td>
+                <td>147960</td>
+            </tr>
+            <tr>
+                <td colspan="3">Итог</td>
+                <td>351280</td>
+            </tr>
+        </tbody>
+    </table>
+<form id="form-example" action="">
+<label for="login">Введите логин</label><br>
+<input type="text" id="login" placeholder="Логин" required><br>
+<label for="password">Введите Пароль</label><br>
+<input type="password"id="password" placeholder="Пароль" required><br>
+<label for="email">Введите почту</label><br>
+<input type="email" id="email" placeholder="Электронная почта" required><br>
+<input type="radio" id="male" name="gendet" checked>
+<label for="mail">М</label>
+<input type="radio" id="female" name="gendet">
+<label for="femail">Ж</label>
+<label for="role">Выбор героя</label><br>
+<select id="role">
+    <option value="user">Пользователь</option>
+    <option value="admin">Админ</option>
+    <option value="super-admin">СУПЕР ААААААААДМММММИИИИИИИИИИИН</option>
+</select><br>
+<label for="comment">Коментарий</label><br>
+<textarea id="comment" placeholder="Ваш Коментарий" disabled></textarea><br>
+<input type="submit" value="Зарегистрироваться">
+<input type="reset">
+</form>
+</body>
+</html>
