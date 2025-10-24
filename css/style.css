@@ -266,7 +266,7 @@ table.table-exapmle tbody :nth-child(odd){
 #contact-form input[type="date"]:focus,
 #contact-form select:focus,
 #contact-form textarea:focus {
-    border-color: #3498db;
+    border-color: #fafafa;
     outline: none;
 }
 
@@ -347,7 +347,7 @@ table.table-example td:nth-child(3) {
     font-weight: bold;
 }
 table.table-example tbody tr:nth-child(odd) {
-    background-color: rgba(0, 255, 255, 0.609);
+    background-color: rgba(255, 255, 255, 0.609);
 }
 body {
     background-color: rgb(255, 255, 255);
