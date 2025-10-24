@@ -30,6 +30,7 @@
          Дональд Эрвин Кнут
         </h1>
         <nav>
+
             <ul>
                 <li><a href="#about">Введение</a></li>
                 <li><a href="#eshkere"> Основные достижения и изобретения. Статьи о них.</a></li>
@@ -85,7 +86,7 @@
                 <th>Год</th>
                 <th>Проект</th>
                 <th>Технология</th>
-                <th>Вклад</th>
+                <th></th>
             </tr>
         </thead>
         
@@ -93,63 +94,68 @@
         <tbody>
             
             <tr>
-                <td>1984</td>
-                <td>Sun Microsystems</td>
-                <td>NeWS</td>
-                <td>Разработка оконной системы</td>
+                <td>1968 </td>
+                <td>Теория структурных методов программирования</td>
+                <td>Теория</td>
+                <td>введение структурного программирования</td>
             </tr>
             <tr>
-                <td>1991</td>
-                <td>Green Project</td>
-                <td>Oak</td>
-                <td>Создание языка Oak (предшественник Java)</td>
+                <td>1972</td>
+                <td>"Искусство программирования" (The Art of Computer Programming)</td>
+                <td>Книга</td>
+                <td>систематизация методов программирования</td>
             </tr>
             <tr>
-                <td>1995</td>
-                <td>Java</td>
-                <td>Java 1.0</td>
-                <td>Официальный релиз языка Java</td>
+                <td>1974</td>
+                <td>Методология разработки программных систем</td>
+                <td>Методология</td>
+                <td>разработка принципов модульного и рекурсивного программирования</td>
             </tr>
             <tr>
-                <td>1996</td>
-                <td>Java Development</td>
-                <td>JDK 1.0</td>
-                <td>Первый комплект разработки Java</td>
+                <td>1987</td>
+                <td>Введение Идиом и шаблонов программирования</td>
+                <td>Методика</td>
+                <td>улучшение гибкости и повторного использования кода</td>
             </tr>
             <tr>
-                <td>2000</td>
-                <td>Java Community</td>
-                <td>JCP</td>
-                <td>Участие в Java Community Process</td>
+                <td>2000-е</td>
+                <td>Разработка учебных курсов и материалов</td>
+                <td>Обучающие ресурсы по алгоритмам и структурам</td>
+                <td>Обучение новых поколений программистов, распространение знаний</td>
             </tr>
         </tbody>
     </table>
-    <form id="form-example" action="">
-    <label for="login">Введите логин </label><br>
-    <input type="text" id="login" placeholder="логин" required><br>
-    <label for="password">Введите пароль</label><br>
-    <input type="password" id="password" placeholder="пароль" required><br>
-
-    <label for="email">Введите почту</label><br>
-    <input type="email" id="mail" placeholder="Электронная почта" required><br>
-
-    <input type="radio" id="male" name="gender" checked>
-    <label for="male">M</label>
-    <input type="radio" id="female" name="gender">
-    <label for="female">W</label><br>
-
-    <label for="role">Выберете роль</label><br>
-    <select id="role" required>
-        <option value="user">пользователь</option>
-        <option value="admin">администратор</option>
-    </select><br>
-
-    <label for="comment">Комментарий</label><br>
-    <textarea id="comment" placeholder="Добавьте ваш комментарий"></textarea><br>
-
-
-    <input type="submit" value="Зарегестрироваться">
-    <input type="reset" value="Сбросить">
+    <h2>Обратная связь</h2>
+<form id="contact=form">
+    <div class="form_item">
+        <label for="tonos">Тема сообщения:</label><br>
+        <select name="tonos" id="tonos">
+            <option value=""disabled selected>Выберите тему</option>
+            <option value="вопрос">Вопрос</option>
+            <option value="предложение">Предложение</option>
+            <option value="прочее">Прочее</option>
+        </select>
+    </div>
+    <div class="form_item">
+        <label for="name">Имя:</label><br>
+        <input type="text" id="name" name="name" placeholder="Введите ваше имя" > 
+    </div>
+    <div class="form_item">
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" placeholder="Почта@mail.com" >
+    </div>
+    <div class="form_item">
+        <label for="message">сообщение</label><br>
+        <textarea type="message" id="message" name="message" placeholder="Введите ваще сообщение"></textarea>
+    </div>
+    <div class="form_item">
+        <input type="checkbox" id="privacy" name="privacy">
+        <label for="privacy">Я согласен(на) с политикой конфиденциальности</label>
+    </div>
+    <div class="form_item">
+        <input type="submit" value="Отправить">
+    </div>
+</form>
 </form>
     <footer>
         <p>&copy; Никита Руденко, 2025г.</p>
